@@ -86,6 +86,10 @@ jobs:
 
             binary "dirloom"
 
+            generate_completions_from_executable "dirloom",
+                                                 shell_parameter_format: :cobra,
+                                                 shells:                 [:bash, :zsh, :fish, :pwsh]
+
             caveats <<~EOS
               Generate shell completions from the installed binary:
 
