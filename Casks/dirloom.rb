@@ -27,6 +27,7 @@ cask "dirloom" do
   end
 
   binary "dirloom"
+
   generate_completions_from_executable "dirloom",
                                        shell_parameter_format: :cobra,
                                        shells:                 [:bash, :zsh, :fish, :pwsh]
