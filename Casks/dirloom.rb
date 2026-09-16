@@ -9,7 +9,6 @@ cask "dirloom" do
 
     url "https://github.com/dirloom/dirloom/releases/download/v#{version}/dirloom_Darwin_#{arch}.tar.gz"
   end
-
   on_linux do
     sha256 arm:   "7c15fc0076e8265ff18078374a280f72dde3de2566b078c46a58482dbbcbebff",
            intel: "3a2d7ca8f525cd97b42e09cab4f03f45ae72d82e59a32ca51d16252b3aa852a9"
@@ -44,7 +43,7 @@ cask "dirloom" do
       (zsh_dir/"_dirloom").write system_command(executable, args: ["completion", "zsh"]).stdout
       (fish_dir/"dirloom.fish").write system_command(executable, args: ["completion", "fish"]).stdout
       (pwsh_dir/"dirloom.ps1").write system_command(executable, args: ["completion", "powershell"]).stdout
-    rescue StandardError => e
+    rescue => e
       puts "Could not install generated shell completions (#{e.message}); run dirloom completion <shell> manually."
     end
   end
