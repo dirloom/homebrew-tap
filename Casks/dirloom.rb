@@ -1,17 +1,17 @@
 cask "dirloom" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.3.0"
+  version "0.3.2"
 
   on_macos do
-    sha256 arm:   "79adc378b872aa579e132c50a2c02abff681dd382fcee732835eee87c9a774fe",
-           intel: "ba6a592c88d05f2481386af2c8307e166e81b331174eb80289b1caccf7a29ffc"
+    sha256 arm:   "7098d2041545ca062375735bccfcb5deff5712e41e6101e54c85abcfc4a5df24",
+           intel: "19ad3d089036663a9d8b8674c5e0c26056a260ee204d53bbeda181a56dba21d1"
 
     url "https://github.com/dirloom/dirloom/releases/download/v#{version}/dirloom_Darwin_#{arch}.tar.gz"
   end
   on_linux do
-    sha256 arm:   "7d676fb380abb285502ce0ee79767e600d3ed7c6de4d238b118aa1f6db088ceb",
-           intel: "254840b7462497613700dc7c1b7e0ecb2340031ce3e7660c683032a24aec0830"
+    sha256 arm:   "2968f3a098d64d1165319cbfc5a63359e42494261476901ea26c718afbdad576",
+           intel: "855979fcd44f12584f44eb9a5dab62df247a2f7e4d4d9cd2f72fe4e573b202e3"
 
     url "https://github.com/dirloom/dirloom/releases/download/v#{version}/dirloom_Linux_#{arch}.tar.gz"
   end
